@@ -52,7 +52,7 @@ h1{
     top: 7rem;
     left: 20rem;
     color: var(--accent1-color);
-
+    font-family: var(--heading-font);
 }
 article{
     position: absolute;
@@ -70,4 +70,5 @@ article img{
 article p{
     margin-left: 2rem;
     color: var(--accent1-color);
+    font-family: var(--paragraph-font);
 }
