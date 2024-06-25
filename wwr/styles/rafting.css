@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #004C6D;
+    --secondary-color: #00796B;
+    --accent1-color: #F1F1F1;
+    --accent2-color: #FFCA28;
+
+    --heading-font: 'roboto', sans-serif;
+    --paragraph-font: 'open sans',sans-serif;
+
+    --nav-background-color: #004C6D;
+    --nav-link-color: #F1F1F1;
+    --nav-hover-link-color: #00796B;
+    --nav-hover-background-color: #f68438;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    max-width: 960px;
+    background-color: var(--primary-color);
+    display: flex;
+}
+header img{
+    width: 85px;
+    height: 85px;
+    padding: 15px;
+}
+nav{
+    margin-top: 45px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--accent1-color);
+    padding: 15px;
+}
+nav a:hover{
+    background-color: var(--nav-hover-background-color);
+    border-radius: 5px;
+    color: var(--nav-hover-link-color);
+}
+.hero img{
+    display: block;
+    max-width: 960px;
+    height: auto;
+}
+h1{
+    position: absolute;
+    top: 7rem;
+    left: 20rem;
+    color: var(--accent1-color);
+
+}
+article{
+    position: absolute;
+    max-width: 70%;
+    top: 12rem;
+    left: 7rem;
+    background-color: var(--secondary-color);
+    background: rgba(1, 84, 52, 0.5);
+}
+article img{
+    width: 15rem;
+    left: 35rem;
+    float: right;
+}
+article p{
+    margin-left: 2rem;
+    color: var(--accent1-color);
+}
