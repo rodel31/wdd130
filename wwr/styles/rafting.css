@@ -25,15 +25,17 @@ body{
 header{
     max-width: 960px;
     background-color: var(--primary-color);
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-around;
     border-bottom: 1px solid var(--accent2-color);
 }
-header img{
+header #logo{
     width: 85px;
 }
 nav{
-    margin-top: 35px;
+    display: flex;
+    margin-top: 15px;
 }
 nav a{
     text-decoration: none;
@@ -79,4 +81,8 @@ article p{
     margin-left: 2rem;
     color: var(--accent1-color);
     font-family: var(--paragraph-font);
+}
+.history{
+    display: grid;
+    grid-template-columns: auto auto;
 }
