@@ -159,15 +159,15 @@ article p{
     grid-column: 2/3;
     grid-row: 7/8;
 }
-figure{
+.adventures div{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     column-gap: 5px;
-    max-width: 90%;
-    justify-self: center;
+    max-width: 960px;
+    justify-items: center;
 }
-figure div{
-    max-width: 200px;
+figure{
+    max-width: 185px;
     max-height: 150px;
     display: flex;
     flex-direction: column;
