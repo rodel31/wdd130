@@ -12,13 +12,18 @@
     --nav-background-color: #004C6D;
     --nav-link-color: #F1F1F1;
     --nav-hover-link-color: #00796B;
-    --nav-hover-background-color: #f68438;
+    --nav-hover-background-color: #fe9149;
+
+    --bg-color: #f68438;
 }
 body{
     margin: 0;
     padding: 0;
 }
 .container{
+    display: grid;
+    grid-template-columns: 960px;
+    grid-template-rows: 5% 90% 5%;
     max-width: 960px;
     margin: auto;
 }
@@ -36,11 +41,12 @@ header #logo{
 nav{
     display: flex;
     margin-top: 15px;
+    max-height: 40px;
 }
 nav a{
     text-decoration: none;
     color: var(--accent1-color);
-    padding: 15px;
+    padding: 12px;
 }
 nav a:hover{
     background-color: var(--nav-hover-background-color);
@@ -49,8 +55,8 @@ nav a:hover{
 }
 main{
     position: absolute;
+    top: 5.3rem;
     max-width: 960px;
-    background-color: #f68438;
 }
 .hero img{
     max-width: 960px;
@@ -85,4 +91,40 @@ article p{
 .history{
     display: grid;
     grid-template-columns: auto auto;
+}
+figure{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 5px;
+    max-width: 90%;
+}
+figure div{
+    max-width: 200px;
+    max-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+figure > div > img{
+    max-width: 200px;
+    max-height: 100px;
+}
+figcaption{
+    background-color: var(--nav-background-color);
+    color: #fff;
+    font: var(--heading-font);
+    padding: 3px;
+    max-height: 35px;
+    text-align: center;
+}
+.adventures{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.adventures h2{
+    grid-column: 1/3;
+    text-align: center;
+    padding: 5px;
+    margin: 12px;
+    border-bottom: 1px solid var(--accent2-color);
 }
