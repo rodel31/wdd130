@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Form Basic HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="/styles/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>Basic HTML and CSS Quiz</h1>
+        </header>
+        <main>
+            <form>
+                <div class="question">
+                    <label for="q1"><strong>1.</strong> What does HTML acronym stand for?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+                <div class="question">
+                    <label for="q2"><strong>2.</strong> How are id and class attributes selected in CSS?</label>
+                    <textarea name="q2" id="q2"></textarea>
+                </div>
+                <div class="question">
+                    <label for="q3"><strong>3.</strong> Which of the following is a valid HTML comment?</label>
+                    <select name="q3" id="q3">
+                        <option value="choose-one" selected disabled>Choose one...</option>
+                        <option value="choice1">//</option>
+                        <option value="choice2">/**/</option>
+                        <option value="choice3">/!/</option>
+                        <option value="choice4">*//*</option>
+                    </select>
+                    
+                </div>
+                <div class="question">
+                    <label for="q4"><strong>4.</strong> How can the border property be used as a shorthand for the individual border properties?</label>
+                    <div class="syntax">
+                        <pre>border-width: 1px;</pre>
+                        <pre>border-style: solid;</pre>
+                        <pre>border-color: navy;</pre>
+                    </div>
+                    <input type="text" id="q4" name="q4">
+                </div>
+                <div class="submit">
+                    <button type="submit">Submit Quiz</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy;2024 | Quiz Form - Basic HTML and CSS Quiz | Rodel I. Ramos
+        </footer>
+    </div>
+    
+</body>
+</html>
