@@ -63,10 +63,19 @@ nav a:hover{
     color: var(--nav-hover-link-color);
 }
 main{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1px auto;
+    background-color: #f1f1f1;
     padding: 1px 0;
+    max-width: 960px;
 }
+
 .hero{
     position: relative;
+    grid-column: 1/4;
+    max-width: 960px;
 }
 .hero img{
     width: 100%; /* Ensure hero image spans the container */
@@ -111,6 +120,7 @@ article p{
     grid-template-columns: 50% 50%; /* Two columns for the history section */
     grid-template-rows: auto auto auto; 
     margin-top: 20px; 
+    grid-column: 1/4;
 }
 .history h2{
     grid-column: 1 / -1; 
@@ -123,6 +133,7 @@ article p{
     max-width: 448px;
     text-align: center;
     border: 2px solid black;
+    margin: 5px auto;
 }
 .history div img{
     width: 100%;
@@ -135,6 +146,7 @@ article p{
     color: var(--primary-color);
     text-align: justify;
 }
+/*
 .left-top{
     grid-column: 1/2;
     grid-row: 2/3;
@@ -158,7 +170,7 @@ article p{
 .right-bottom{
     grid-column: 2/3;
     grid-row: 7/8;
-}
+} */
 .adventures div{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -194,6 +206,113 @@ figcaption{
     margin: 12px;
     border-bottom: 1px solid var(--accent2-color);
 }
+
+/* Additional CSS for contact page */
+.contact-info {
+    grid-column: 1/4;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #c8e2ed;
+}
+.contact-info h1{
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 15px 25px;
+}
+.company-info {
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+    padding: 5px 10px;
+}
+
+.map-container {
+    width: 98%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+iframe{
+    width: 100%;
+}
+.employee-profiles {
+    grid-column: 1/3;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--paragraph-font);
+}
+
+.employee-profiles .profile {
+    display: inline-block;
+    width: 20%;
+    margin: 15px 10px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.employee-profiles img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    grid-column: 3/4;
+    text-align: center;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-family: var(--paragraph-font);
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.contact-form fieldset legend {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--nav-background-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+
 footer{
     background-color: var(--nav-background-color);
     color: var(--accent1-color);
