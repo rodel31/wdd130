@@ -6,7 +6,7 @@
     <title>Contact Us Page White Rater Rafting</title>
     <meta name="description" content="This page will be an Contact Us type of page which may provide contact information">
     <meta name="author" content="Rodel Ramos">
-    <link rel="stylesheet" href="../wwr/styles/about.css">
+    <link rel="stylesheet" href="../wwr/styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
@@ -21,40 +21,50 @@
             </nav>
         </header>
         <main>
-            <div class="contact">
+            <section class="contact-info">
                 <h1>Contact Us</h1>
-                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Victoria, Tarlac, Tarlac Philippines; 2313</p>
-                <p><i class="fa fa-phone" aria-hidden="true"></i> (+63) 909-123-4568</p>
-            </div>
-            <section class="feedback">
-                <div class="employee-profile">
-                    <img src="/wwr/images/emp1.jpg" alt="employee-1">
-                    <img src="/wwr/images/emp2.jpg" alt="employee-2">
-                    <img src="/wwr/images/emp3.jpg" alt="employee-3">
+                <div class="company-info">
+                    <p><strong>Address:</strong> 123 River Road, Adventureville, Tarlac</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@raftingadventures.com</p>
                 </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36579.668169246885!2d120.58845937916423!3d15.486369594544481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1721031088180!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <section class="employee-profiles">
+                <h2>Meet Our Team</h2>
+                <div class="profile">
+                    <img src="/wwr/images/emp1.jpg" alt="employee-1">
+                    <p><strong>John Doe</strong><br>Lead Software Engineer</p>
+                </div>
+                <div class="profile">
+                    <img src="/wwr/images/emp2.jpg" alt="employee-2">
+                    <p><strong>Jane Smith</strong><br>Operations Manager</p>
+                </div>
+                <div class="profile">
+                    <img src="/wwr/images/emp3.jpg" alt="employee-3">
+                    <p><strong>Michael Johnson</strong><br>Fullstack Developer</p>
+                </div>
+            </section>
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
                 <form>
-                    <label>Name:
-                        <input type="text" name="username" id="username">
-                    </label>
-                    <label> Email:
-                        <input type="email" name="email" id="email">
-                    </label>
-                    <label>
-                        <input type="radio" name="inquiry" id="inquiry"> General Inquiry
-                        <input type="radio" name="reservation" id="reservation"> Reservation Question
-                        <input type="radio" name="suggestion" id="suggestion"> Website Suggestion
-                    </label>
-                    <label>
-                        <textarea name="msg" id="msg"></textarea>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="subscription" id="subscription">Please subscribe me to the monthly newsletter
-                    </label>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <fieldset>
+                        <legend>Purpose of Message:</legend>
+                        <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label><br>
+                        <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label><br>
+                        <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                    </fieldset>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label><input type="checkbox" name="newsletter" value="subscribe"> Please subscribe me to the monthly newsletter</label>
                     <button type="submit">Submit</button>
                 </form>
-            </section>
-            <section class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36579.668169246885!2d120.58845937916423!3d15.486369594544481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1721031088180!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </main>
         <footer>

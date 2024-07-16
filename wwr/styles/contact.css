@@ -35,13 +35,6 @@ header{
     align-items: center;
     background-color: var(--primary-color);
     border-bottom: 3px solid var(--accent2-color);
-
-    /* max-width: 960px;
-    background-color: var(--primary-color);
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-    border-bottom: 4px solid var(--accent2-color); */
 }
 header #logo{
     width: 85px;
@@ -66,55 +59,115 @@ main{
     display: grid;
     gap: 1px;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 1px 0;
-}
-.contact{
-    grid-column: 1/4;
-    max-width: 960px;
-    background-color: lightblue;
-    height: 200px;
-}
-.contact h1{
-    color: black;
-    font-family: var(--heading-font);
-    text-align: center;
-    padding: 20px 30px;
-}
-.contact p{
-    padding: 5px 2px;
-    color: black;
-    font-family: var(--heading-font);
-    text-align: center;
-}
-.feedback{
-    grid-column: 1/3;
-    background-color: #F1F1F1;
-}
-.employee-profile{
-   display: flex;
-   justify-content: center;
-   flex-wrap: nowrap;
-}
-.employee-profile img{
-    height: 75px;
-    border-radius: 50%;
-    margin-top: 25px;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    border: 1px solid var(--nav-background-color);
-    align-items: center;
-    margin: 0 auto;
-    padding: 15px;
+    padding: 1px auto;
+    background-color: #f1f1f1;
 }
 
-iframe{
-    grid-column: 3/4;
-    width: 100%;
-    float: right;
+/* Additional CSS for contact page */
+.contact-info {
+    grid-column: 1/4;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #c8e2ed;
 }
+.contact-info h1{
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 15px 25px;
+}
+.company-info {
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+    padding: 5px 10px;
+}
+
+.map-container {
+    width: 98%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+iframe{
+    width: 100%;
+}
+.employee-profiles {
+    grid-column: 1/3;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--paragraph-font);
+}
+
+.employee-profiles .profile {
+    display: inline-block;
+    width: 20%;
+    margin: 15px 10px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.employee-profiles img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    grid-column: 3/4;
+    text-align: center;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-family: var(--paragraph-font);
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.contact-form fieldset legend {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--nav-background-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
 
 footer{
     font-family: var(--paragraph-font);
