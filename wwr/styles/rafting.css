@@ -1,13 +1,11 @@
 
-
-
 :root {
     --primary-color: #004C6D;
     --secondary-color: #00796B;
     --accent1-color: #F1F1F1;
     --accent2-color: #FFCA28;
 
-    --heading-font:  Verdana, Geneva, Tahoma, sans-serif;
+    --heading-font:  Verdana, Tahoma, sans-serif;
     --paragraph-font: Arial, Helvetica, sans-serif;
 
     --nav-background-color: #004C6D;
