@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 
 
 :root {
@@ -7,8 +7,8 @@
     --accent1-color: #F1F1F1;
     --accent2-color: #FFCA28;
 
-    --heading-font: 'roboto', sans-serif;
-    --paragraph-font: 'open sans',sans-serif;
+    --heading-font:  Verdana, Geneva, Tahoma, sans-serif;
+    --paragraph-font: Arial, Helvetica, sans-serif;
 
     --nav-background-color: #004C6D;
     --nav-link-color: #F1F1F1;
@@ -103,7 +103,6 @@ article{
     left: 3rem;
     width: 85%;
     height: 125px;
-    background-color: var(--secondary-color);
     background: rgba(1, 84, 52, 0.5); 
 }
 article img{
@@ -143,7 +142,6 @@ article p{
 }
 .history div p{
     padding: 15px 5px;
-    color: var(--accent1-color);
     font-family: var(--paragraph-font);
     color: var(--primary-color);
     text-align: justify;
@@ -287,7 +285,7 @@ iframe{
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contact-form fieldset {
@@ -424,8 +422,8 @@ iframe{
 }
 
 footer{
-    background-color: var(--nav-background-color);
-    color: var(--accent1-color);
+    background-color: #004C6D;
+    color: #F1F1F1;
     padding: 20px 0;
     text-align: center;
     display: flex;
