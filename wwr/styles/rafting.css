@@ -332,7 +332,7 @@ iframe{
 }
 .cta-button {
     display: inline-block;
-    background-color: var(--nav-background-color);
+    background-color: var(--nav-hover-background-color);
     color: #fff;
     text-decoration: none;
     padding: 15px 30px;
@@ -342,7 +342,7 @@ iframe{
 }
 
 .cta-button:hover {
-    background-color: var(--nav-hover-background-color);
+    background-color: var(--nav-background-color);
 }
 .trip-descriptions {
     grid-column: 1/4;
@@ -419,6 +419,88 @@ iframe{
     background-color: #ddd;
 }
 
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 85% 15%;
+    grid-column: 1/4;
+    background-image: url(../images/home-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+}
+.home-content{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 42px;
+
+}
+.home-content > h1{
+    font-size: 48px;
+    color: #293d54; 
+    -webkit-text-stroke: 1px #c3e9fd;
+    text-align: center;
+}
+.home-content > p{
+    font-size: 20px;
+    color: #fefefe;
+    margin-top: 30px;
+    padding: 15px 15px;
+}
+.home-content > a{
+    margin-top: 25px;
+}
+.newsletter{
+    display: flex;
+    grid-column: 4/6;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto;
+    border: 1px solid #0c0c0c;
+    background-color: rgba(129, 161, 184, 0.5);
+    width: 255px;
+    padding: 15px;
+    border-radius: 5PX;
+}
+.newsletter > form{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+.signup-form input[type="text"],
+.signup-form input[type="email"]{
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 8px;
+}
+.cta-signup{
+    font-size: 20px;
+    color: #F1F1F1;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 55px;
+    border: none;
+}
+.cta-signup:hover{
+    background-color: #004C6D;
+}
+.other-interested{
+    display: flex;
+    grid-column: 2/5;
+    height: 85px;
+    justify-content: center;
+    gap: 15px;
+}
+.other-interested img{
+    max-width: 150px;
+    max-height: 100px;
+    border: 1px solid;
+}
 footer{
     background-color: #004C6D;
     color: #F1F1F1;
